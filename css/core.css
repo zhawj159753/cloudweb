@@ -14,29 +14,29 @@
 }
 
 #header {
-	width: 60%;
+	width: 70%;
 	height: 2em;
 	margin-top: 10px;
 	position: absolute;
 	top: 2em;
-	left: 20%;
+	left: 15%;
 	display: table;
 }
 
 #navigation {
-	width: 60%;
+	width: 70%;
 	height: 3em;
 	margin-top: 10px;
 	position: absolute;
 	top: 5em;
-	left: 20%;
+	left: 15%;
 }
 
 #content {
-	width: 60%;
+	width: 70%;
 	margin-top: 10px;
 	top: 9em;
-	left: 20%;
+	left: 15%;
 	position: absolute;
 }
 
@@ -87,4 +87,12 @@
 
 #content #link_show {
 	padding-top: 5%;
+}
+
+#content #detail_show img {
+	width: 110%;
+}
+
+#content #link_show img {
+	width: 23%;
 }
