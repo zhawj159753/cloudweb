@@ -32,6 +32,14 @@
 	left: 20%;
 }
 
+#content {
+	width: 60%;
+	margin-top: 10px;
+	top: 9em;
+	left: 20%;
+	position: absolute;
+}
+
 .back-image {
 	width: 100%;
 }
@@ -71,4 +79,12 @@
 	border-right: 1px solid #ccc;
 	font-family:Arial,Verdana,Sans-serif;
 	font-size: 1em;
+}
+
+#content #detail_show {
+	padding-top: 3%;
+}
+
+#content #link_show {
+	padding-top: 5%;
 }
