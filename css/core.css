@@ -23,6 +23,15 @@
 	display: table;
 }
 
+#navigation {
+	width: 60%;
+	height: 3em;
+	margin-top: 10px;
+	position: absolute;
+	top: 5em;
+	left: 20%;
+}
+
 .back-image {
 	width: 100%;
 }
@@ -50,4 +59,16 @@
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
 	background-image: url(../img/icon-search-2.png);
+}
+
+#header a {
+	color: #CC9900;
+}
+
+#navigation a {
+	color: white;
+	text-decoration: none;
+	border-right: 1px solid #ccc;
+	font-family:Arial,Verdana,Sans-serif;
+	font-size: 1em;
 }
