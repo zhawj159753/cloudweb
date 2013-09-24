@@ -40,6 +40,14 @@
 	position: absolute;
 }
 
+#footer {
+	width: 70%;
+	position: absolute;
+	bottom: 20px;
+	height: 50px;
+	margin-left: 15%;
+}
+
 .back-image {
 	width: 100%;
 }
@@ -95,4 +103,17 @@
 
 #content #link_show img {
 	width: 23%;
+}
+
+#footer a {
+	color: white;
+	text-decoration: none;
+	font-family: Arial,Verdana,Sans-serif;
+	font-size: 1em;
+}
+
+#footer div {
+	color: white;
+	font-family: Arial,Verdana,Sans-serif;
+	font-size: 1em;
 }
