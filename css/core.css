@@ -60,7 +60,7 @@
 #global_search {
 	border: 1px solid #cccccc;
 	border-radius: 9px;
-	height: 20px;
+	height: 25px;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 	outline: none;
@@ -68,7 +68,7 @@
 
 
 .global-search-btn {
-	height: 20px;
+	height: 25px;
 	margin-left: -3px;
 	padding: 0 12px;
 	border: 1px solid #cccccc;
@@ -96,15 +96,28 @@
 
 #content #link_show {
 	padding-top: 5%;
+	position: relative;
+}
+
+#content #link_show h4 {
+	color: white;
+	padding: 10px;
+	font-family:Arial,Verdana,Sans-serif;
+	font-size: 1em;
+}
+
+#content #link_show a {
+	color: white;
+	float: right;
+	padding-right: 2px;
+	font-family:Arial,Verdana,Sans-serif;
+	font-size: 1em;
 }
 
 #content #detail_show img {
 	width: 110%;
 }
 
-#content #link_show img {
-	width: 23%;
-}
 
 #footer a {
 	color: white;
