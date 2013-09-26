@@ -114,8 +114,45 @@
 	font-size: 1em;
 }
 
+#content #link_show .link-bkgd-3 {
+	background-color: #123456;
+	display: block;
+	padding-bottom: 2px;
+	background:-webkit-gradient(linear, 0% 0%, 2% 20%,
+								color-stop(0,rgb(102,153,204)),
+								color-stop(0,rgb(153,204,255)),
+								color-stop(1,rgb(102,153,204))
+								);
+}
+
+#content #link_show .link-bkgd-2 {
+	background-color: #123456;
+	display: block;
+	padding-bottom: 2px;
+	background:-webkit-gradient(linear, 0% 0%, 1.2% 17%,
+								color-stop(0,rgb(102,102,153)),
+								color-stop(0,rgb(200,200,245)),
+								color-stop(1,rgb(102,102,153))
+								);
+}
+
+#content #link_show .link-bkgd-1 {
+	background-color: #6699ff;
+	display: block;
+	padding-bottom: 2px;
+	background:-webkit-gradient(linear, 0% 0%, 1% 22%,
+								color-stop(0,rgb(51,153,255)),
+								color-stop(0,rgb(0,204,255)),
+								color-stop(1,rgb(51,153,255))
+								);
+}
+
 #content #detail_show img {
 	width: 110%;
+}
+
+#content #link_show img{
+	width: 17%;
 }
 
 
