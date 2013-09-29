@@ -140,19 +140,12 @@
 	background-color: #6699ff;
 	display: block;
 	padding-bottom: 2px;
-	background:-webkit-gradient(linear, 0% 0%, 1% 22%,
+	/*background:-webkit-gradient(linear, 0% 0%, 1% 22%,
 								color-stop(0,rgb(51,153,255)),
 								color-stop(0,rgb(0,204,255)),
 								color-stop(1,rgb(51,153,255))
-								);
-}
-
-#content #detail_show img {
-	width: 110%;
-}
-
-#content #link_show img{
-	width: 17%;
+								);*/
+	background: url(../img/link_app.png);
 }
 
 
