@@ -1,9 +1,35 @@
-.app-info-pannel {
+.device-info-pannel {
 	display: none;
 	position: absolute;
 	z-index: 3;
 	width: 200px;
 	height: 114px;
 	background: url(http://m.baidu.com/static/as/images/li-pannel.png);
+	background-repeat: no-repeat;
+	box-shadow: 0px 2px 2px #666;
+}
+
+.app-info-pannel {
+	display: none;
+	position: absolute;
+	z-index: 3;
+	width: 200px;
+	height: 114px;
+	background: url(../img/icon_app_panel.png);
+	background-repeat: no-repeat;
+}
+
+.background-device {
+	background: url(../img/link_device.png);
+	background-repeat: no-repeat;
+}
+
+.background-app {
+	background: url(../img/link_app.png);
+	background-repeat: no-repeat;
+}
+
+.background-test {
+	background: url(../img/link_test.png);
 	background-repeat: no-repeat;
 }

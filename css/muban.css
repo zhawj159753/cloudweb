@@ -16,6 +16,7 @@ html body {
 								);
 }
 
+
 .back-image {
 	position: absolute;
 	top: 0;
@@ -85,14 +86,35 @@ li {
 	position: relative;
 }
 
-li.hover .app-info-pannel{
+li.hover .device-info-pannel{
+	display: block;
+}
+
+li.hover .app-info-pannel {
 	display: block;
 }
 
 .link-border {
-	background: url(../img/link_app.png);
-	background-repeat: no-repeat;
 	display: block;
-	width: 228px;
-	height: 174px;
+	width: 200px;
+	height: 160px;
+	padding: 10px 10px;
+}
+
+.link-border h3 {
+	color: white;
+	font-family:Arial;
+	font-weight: normal;
+}
+
+.link-border h4 {
+	color: #ccc;
+	font-family:Arial;
+	font-weight: normal;
+}
+
+.link-border h5 {
+	color: #ccc;
+	font-family:Arial;
+	font-weight: normal;
 }

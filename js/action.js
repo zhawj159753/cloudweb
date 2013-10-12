@@ -17,7 +17,19 @@ function zoom() {
 $(".link-border ul li img").hover(function() {
 	var cur_img =$(this).parents("li");
 	cur_img.data("setTime",setTimeout(function(){
-		cur_img.addClass("hover").find(".app-info-pannel").offset({left:cur_img.offset().left+20, top:cur_img.offset().top});
+		cur_img.addClass("hover").find(".device-info-pannel").offset({left:cur_img.offset().left, top:cur_img.offset().top});
+	}), 100);
+}, function() {
+	var cur_img =$(this).parents("li");
+	clearTimeout(cur_img.data("setTime"));
+	cur_img.removeClass("hover");
+}
+);
+
+$(".link-border ul li img").hover(function() {
+	var cur_img =$(this).parents("li");
+	cur_img.data("setTime",setTimeout(function(){
+		cur_img.addClass("hover").find(".app-info-pannel").offset({left:cur_img.offset().left, top:cur_img.offset().top+10});
 	}), 100);
 }, function() {
 	var cur_img =$(this).parents("li");
