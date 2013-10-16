@@ -55,8 +55,8 @@ html body {
 
 .global-search-btn {
 	height: 25px;
-	margin-left: -3px;
-	padding: 0 12px;
+	margin-left: 0px;
+	padding: 4px 12px;
 	border: 1px solid #cccccc;
 	border-radius: 9px;
 	border-top-left-radius: 0;
@@ -68,29 +68,149 @@ html body {
 	color: #CC9900;
 }
 
-#navigation a {
-	color: white;
-	text-decoration: none;
-	border-right: 1px solid #ccc;
-	font-family:Arial,Verdana,Sans-serif;
-	font-size: 1em;
+
+li{
+	list-style:none;
+	float:left;
+	border-right: 1px solid #2E3235;
+	position: relative;
+	/*background: -moz-linear-gradient(top, #fff, #555D5F 2% ,#555D5F  50%,#3E4245 100%);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), color-stop(2%, #555D5F), color-stop(50%, #555D5F),to(#3E4245));*/
+	background:#555D5F;
+}
+li:hover{
+	/*background: -moz-linear-gradient(top, #fff, #3E4245 2% ,#555D5F  80%,#555D5F 100%);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), color-stop(2%, #3E4245), color-stop(80%, #3E4245),to(#555D5F));*/
+	background:#ccc;
+	-moz-transition: background 1s ease-out;
+	-webkit-transition: background 1s ease-out;
+}
+li a{
+	display:block;
+	height:40px;
+	line-height:40px;
+	padding:0 30px;
+	font-size:12px;
+	color:#fff;
+	text-shadow: 0px -1px 0px #000;
+	text-decoration:none;
+	white-space:nowrap;
+	border-left: 1px solid #999E9F;
+    border-top: 1px solid #999E9F;
+	-moz-border-top-left-radius: 2px;
+	-webkit-border-top-left-radius: 2px;
+	
+	z-index:100;
+}
+li > a{
+	position:relative;
+}
+li.first a{
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+}
+li.last{
+	border-right: 0 none;
+}
+
+
+dl{
+	position:absolute;
+	display:block;
+	top:40px;
+	left: -25px;
+	
+	background:#222222;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	
+	-webkit-box-shadow:1px 1px 3px #292929;
+    -moz-box-shadow:1px 1px 3px #292929;
+	
+	z-index:10;
+	background:rgba(255,0,0,0.5);/*前三个参数为rgb颜色，第四个参数为透明度*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);/*#7F000000的前两位为16进制透明度，后六位为16进制颜色*/
+
+            
+}
+li:hover dl{
+	top:50px;
+	display:block;
+	padding:10px;
+}
+dl a{
+	background:transparent;
+	border:0 none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-transition: background 0.5s ease-out;
+	-webkit-transition: background 0.5s ease-out;
+	
+	z-index:50;
+}
+dl a:hover{
+	color:#FFF;
+	background:#999E9F;
+	-moz-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+	-webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+dd{
+	margin-top:-40px;
+	opacity:0;
+	-webkit-transition-property:all;
+	/*-webkit-transition-timing-function: cubic-bezier(5,0,5,0);*/
+	-moz-transition-property: all;
+	/*-moz-transition-timing-function: cubic-bezier(5,0,5,0);*/
+	/*-webkit-transition-delay:5s;
+	-moz-transition-delay:5s;*/
+}
+li:hover dd{
+	margin-top:0;
+	opacity:1;
+}
+li dd:nth-child(1){
+	-webkit-transition-duration: 0.1s;
+	-moz-transition-duration: 0.1s;
+}
+li dd:nth-child(2){
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+}
+li dd:nth-child(3){
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+li dd:nth-child(4){
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+}
+dt{
+	display:none;
+	margin-top:-25px;
+	padding-top:15px;
+	height:10px;
+}
+li:hover dt{
+	display:block;
 }
 
 #content #detail_show {
 	padding-top: 3%;
 }
 
-li {
+/*li {
 	list-style-type: none;
 	float: left;
 	position: relative;
-}
+}*/
 
-li.hover .device-info-pannel{
+#content li.hover .device-info-pannel{
 	display: block;
 }
 
-li.hover .app-info-pannel {
+#content li.hover .app-info-pannel {
 	display: block;
 }
 
