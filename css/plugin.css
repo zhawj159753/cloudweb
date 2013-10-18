@@ -1,0 +1,21 @@
+#content {
+	padding-top: 80px;
+}
+
+#content h4{
+	color: white;
+	margin-left: 30px;
+	padding-bottom: 5px;
+	font-family: Arial;
+	font-weight: normal;
+}
+
+#content .transparent-block {
+	margin-left: 30px;
+	background:rgba(204,204,204,0.3);/*前三个参数为rgb颜色，第四个参数为透明度*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);/*#7F000000的前两位为16进制透明度，后六位为16进制颜色*/
+    margin-top: 10px;
+    margin-right: 30px;
+    border-radius: 2px;
+    height: 220px;
+}
