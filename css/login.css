@@ -1,0 +1,38 @@
+
+#content {
+	padding-left: 300px;
+}
+
+#content h5{
+	color: white;
+	font-family: Arial;
+}
+
+#content input {
+	height: 25px;
+	width: 200px;
+}
+
+#content button {
+	width: 200px;
+	border: none;
+	height: 25px;
+	background-color: #336699;
+}
+
+#content a {
+	color: #003366;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+#content img {
+	padding-top: 100px;
+	margin-left: 80px;
+}
+
+.login {
+	float: left;
+	padding-top: 200px;
+}
+

@@ -10,8 +10,15 @@ function showBack() {
 }
 
 function zoom() {
-	var c = document.getElementById("content");
-	c.setAttribute("style","zoom:1");
+	var c = document.getElementById("wrapper");
+	if(screen.width > 1300){
+		
+		c.setAttribute("style","zoom:1.2");
+	}
+	else {
+		c.setAttribute("style","zoom:0.9");
+	}
+	
 }
 
 $(".link-border ul li img").hover(function() {

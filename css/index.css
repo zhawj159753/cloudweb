@@ -1,3 +1,5 @@
+
+
 .device-info-pannel {
 	display: none;
 	position: absolute;
@@ -32,4 +34,55 @@
 .background-test {
 	background: url(../img/link_test.png);
 	background-repeat: no-repeat;
+}
+
+#content #detail_show {
+	padding-top: 30px;
+}
+
+/*li {
+	list-style-type: none;
+	float: left;
+	position: relative;
+}*/
+
+#content {
+	padding-top: 100px;
+}
+
+#content li.hover .device-info-pannel{
+	display: block;
+}
+
+#content li.hover .app-info-pannel {
+	display: block;
+}
+
+#content #link_show {
+	padding-top: 4%;
+}
+
+.link-border {
+	display: block;
+	width: 200px;
+	height: 160px;
+	padding: 10px 10px;
+}
+
+.link-border h3 {
+	color: white;
+	font-family:Arial;
+	font-weight: normal;
+}
+
+.link-border h4 {
+	color: #ccc;
+	font-family:Arial;
+	font-weight: normal;
+}
+
+.link-border h5 {
+	color: #ccc;
+	font-family:Arial;
+	font-weight: normal;
 }
