@@ -2,10 +2,10 @@
 
 <html>
 <head>
-	<title>插件下载</title>
+	<title>报告</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/muban.css">
-	<link rel="stylesheet" type="text/css" href="css/plugin.css">
+	<link rel="stylesheet" type="text/css" href="css/report.css">
 </head>
 
 <body onload="zoom()">
@@ -66,22 +66,36 @@
 		</div>
 
 		<div id="content">
-			<div>
-				<h4>Plugin Download</h4>
-				<hr>
-				<div class="transparent-block">
-					hello
+			<div id="processing">
+				<span>App store: </span>
+				<span>Google Play</span>
+				<br>
+				<span>Test Category: </span>
+				<span>Performance Test</span>
+				<br>
+				<span>Device: </span>
+				<span>Lenovo K900</span>
+
+				<div id="load_progress">
+					<div id="load_percentage">
+					</div>
 				</div>
 			</div>
 
-			<div style="padding-top:50px">
-				<h4>Plugin Download</h4>
+			<div id="stand_by">
+				<h4>Stand by</h4>
 				<hr>
 				<div class="transparent-block">
-					hello
+					<ol>
+						<li>
+							<div style="display:inline">Google Play Store(Top100)</div>
+							<div class="align-right">Delete</div>
+							<div class="align-right" style="margin-right:20px;">Stop</div>
+						</li>
+					</ol>
 				</div>
 			</div>
-			
+
 		</div>
 
 		<div id="footer">
@@ -97,5 +111,22 @@
 	</div>
 
 <script src="js/action.js"></script>
+<script type="text/javascript">
+
+var already = 0;
+function display(max){
+	already++;
+	var disObj = document.all.load_percentage;
+	disObj.style.width = 100 * already/max + "%";
+	disObj.innerHTML = 100 * already/max + "%";
+
+	var timer = window.setTimeout("display("+max+")", 50);
+	if(already >= max){
+		window.clearTimeout(timer);
+		disObj.innerHTML = "已完成。";
+	}
+}
+//display(50);
+</script>
 </body>
 <html>

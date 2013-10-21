@@ -1,0 +1,82 @@
+#content {
+	padding-top: 80px;
+	width: 80%;
+	margin: auto;
+}
+
+#processing {
+	width: 83%;
+	margin: auto;
+	background:rgba(204,204,204,0.3);/*前三个参数为rgb颜色，第四个参数为透明度*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);/*#7F000000的前两位为16进制透明度，后六位为16进制颜色*/
+    margin-top: 10px;
+    border-radius: 2px;
+    padding: 20px 20px;
+    border-radius: 9px;
+    border: 1px solid #aaa;
+}
+
+#processing span{
+	color: white;
+	font-family: Arial;
+	line-height: 200%;
+}
+
+#processing #load_progress {
+	margin-top: 10px;
+	height: 20px;
+	background-color:#0066FF;
+	background:-webkit-gradient(linear, 0% 0%, 0% 50%, from(#0066ff), to(#0099ff));
+	border-radius: 3px;
+	box-shadow: 1px 1px 4px #333;
+}
+
+#processing #load_percentage {
+	height: 20px;
+	width: 00%;
+	background-color: white;
+	background:-webkit-gradient(linear, 0% 0%, 0% 50%, from(#ffffff), to(#cccccc));
+}
+
+
+
+#content .transparent-block {
+	margin-left: 30px;
+	background:rgba(204,204,204,0.3);/*前三个参数为rgb颜色，第四个参数为透明度*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);/*#7F000000的前两位为16进制透明度，后六位为16进制颜色*/
+    margin-top: 10px;
+    margin-right: 30px;
+    border-radius: 2px;
+    height: 180px;
+    padding: 20px 40px;
+}
+
+#stand_by {
+	padding-top:50px;
+	bor
+}
+
+#stand_by h4{
+	color: #666600;
+	margin-left: 30px;
+	padding-bottom: 5px;
+	font-family: Arial;
+	font-weight: normal;
+}
+
+#stand_by li {
+	list-style: disc;
+	color: #666600;
+	font-family: Arial;
+}
+
+#stand_by li:hover {
+	background: none;
+}
+
+
+li .align-right {
+	float: right;
+	display: inline;
+	border-bottom: 1px solid #666600;
+}

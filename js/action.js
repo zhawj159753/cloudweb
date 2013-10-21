@@ -18,7 +18,6 @@ function zoom() {
 	else {
 		c.setAttribute("style","zoom:0.9");
 	}
-	
 }
 
 $(".link-border ul li img").hover(function() {
@@ -44,3 +43,17 @@ $(".link-border ul li img").hover(function() {
 	cur_img.removeClass("hover");
 }
 );
+
+var already = 0;
+function display(max){
+	already++;
+	var disObj = document.all.load_percentage;
+	disObj.style.width = 100 * already/max + "%";
+	disObj.innerHTML = 100 * already/max + "%";
+
+	var timer = window.setTimeout("display("+max+")", 200);
+	if(already >= max){
+		window.clearTimeout(timer);
+		disObj.innerHTML = "已完成。";
+	}
+}
