@@ -23,7 +23,7 @@ function zoom() {
 $(".link-border ul li img").hover(function() {
 	var cur_img =$(this).parents("li");
 	cur_img.data("setTime",setTimeout(function(){
-		cur_img.addClass("hover").find(".device-info-pannel").offset({left:cur_img.offset().left, top:cur_img.offset().top});
+		cur_img.addClass("hover").find(".device-info-pannel").offset({left:cur_img.offset().left, top:cur_img.offset().top+16});
 	}), 100);
 }, function() {
 	var cur_img =$(this).parents("li");
@@ -35,7 +35,7 @@ $(".link-border ul li img").hover(function() {
 $(".link-border ul li img").hover(function() {
 	var cur_img =$(this).parents("li");
 	cur_img.data("setTime",setTimeout(function(){
-		cur_img.addClass("hover").find(".app-info-pannel").offset({left:cur_img.offset().left, top:cur_img.offset().top+10});
+		cur_img.addClass("hover").find(".app-info-pannel").offset({left:cur_img.offset().left+4, top:cur_img.offset().top+105});
 	}), 100);
 }, function() {
 	var cur_img =$(this).parents("li");

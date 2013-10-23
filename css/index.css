@@ -6,7 +6,7 @@
 	z-index: 3;
 	width: 200px;
 	height: 114px;
-	background: url(http://m.baidu.com/static/as/images/li-pannel.png);
+	background: url(../img/devices_pannel.png);
 	background-repeat: no-repeat;
 	box-shadow: 0px 2px 2px #666;
 }
@@ -17,7 +17,7 @@
 	z-index: 3;
 	width: 200px;
 	height: 114px;
-	background: url(../img/icon_app_panel.png);
+	background: url(../img/apps_pannel.png);
 	background-repeat: no-repeat;
 }
 
@@ -55,6 +55,10 @@
 	float: left;
 }
 
+#content li:hover {
+	background: none;
+}
+
 #content li.hover .device-info-pannel{
 	display: block;
 }
@@ -81,13 +85,17 @@
 }
 
 .link-border h4 {
-	color: #ccc;
+	color: white;
 	font-family:Arial;
 	font-weight: normal;
+	font-size: 12px;
+	padding-left: 10px;
 }
 
 .link-border h5 {
 	color: #ccc;
 	font-family:Arial;
 	font-weight: normal;
+	font-size: 8px;
+	padding-left: 10px;
 }
