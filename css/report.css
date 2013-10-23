@@ -116,7 +116,13 @@ li .align-right {
 	font-family: Arial;
 }
 
+
 #footer {
 	position: relative;
 	margin: 50px auto 0 auto;
+}
+
+.arrow-down {
+	float: right;
+	cursor: hand;
 }

@@ -126,7 +126,7 @@
 			<div id="history">
 				<h4>Test History</h4>
 				<hr>
-				<div class="transparent-block">
+				<div class="transparent-block" style="height:auto">
 					<ol>
 						<li>
 							<div style="display:inline">Google Play Store(top100)</div>
@@ -139,9 +139,42 @@
 							<div class="align-right">Reprot</div>
 							<div style="float:right; display:inline; margin-right:20px">2013-09-09</div>
 						</li>
+						<br>
+						<li>
+							<div style="display:inline">Google Play Store(top100)</div>
+							<div class="align-right">Reprot</div>
+							<div style="float:right; display:inline; margin-right:20px">2013-09-09</div>
+						</li>
+					</ol>
+					<br>
+					<hr style="margin-left:-20px;" size="0">
+					<br>
+					<div class="arrow-down" onclick="hide('history_week')">
+						a week ago
+						<img src="img/downarrow.png">
+					</div>
+					<br>
+					<ol id="history_week" style="padding-top:10px; display:none">
+						<li>
+							<div style="display:inline">Google Play Store(top100)</div>
+							<div class="align-right">Reprot</div>
+							<div style="float:right; display:inline; margin-right:20px">2013-09-09</div>
+						</li>
+						<br>
 					</ol>
 					
-
+					<div class="arrow-down" onclick="hide('history_month')">
+						a month ago
+						<img src="img/downarrow.png">
+					</div>
+					<br>
+					<ol id="history_month" style="padding-top:10px; display:none">
+						<li>
+							<div style="display:inline">Google Play Store(top100)</div>
+							<div class="align-right">Reprot</div>
+							<div style="float:right; display:inline; margin-right:20px">2013-09-09</div>
+						</li>
+					</ol>
 				</div>
 			</div>
 
@@ -176,8 +209,14 @@ function display(max){
 	}
 }
 
-function show(){
-	alert(123);
+function hide(funName){
+	var fun = document.getElementById(funName);
+	if(fun.style.display == "block"){
+		fun.style.display = "none";
+	}
+	else{
+		fun.style.display = "block";
+	}
 }
 //display(50);
 </script>
