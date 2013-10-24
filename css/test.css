@@ -31,10 +31,15 @@
 	outline: none;
 }
 
-.test-block ul {
+.test-block menu {
 	list-style: none;
 	background-color: #006699;
 	padding: 3px 5px;
+	display: none;
+}
+
+.test-block menu:hover {
+	display: none;
 }
 
 .test-block li{

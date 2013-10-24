@@ -18,6 +18,7 @@ function zoom() {
 	else {
 		c.setAttribute("style","zoom:0.9");
 	}
+
 }
 
 $(".link-border ul li img").hover(function() {
@@ -56,4 +57,19 @@ function display(max){
 		window.clearTimeout(timer);
 		disObj.innerHTML = "已完成。";
 	}
+}
+
+function showMenu(){
+	var obj = document.getElementById("content_1");
+	if(obj.style.display == "block"){
+		obj.style.display = "none";
+	}
+	else{
+		obj.style.display = "block";
+	}
+}
+
+function hideMenu(content){
+	document.getElementById("content_1").style.display = "none";
+	document.getElementById("content_input").value = content;
 }

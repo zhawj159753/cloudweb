@@ -1,5 +1,4 @@
 
-
 <html>
 <head>
 	<title>测试</title>
@@ -77,14 +76,15 @@
 						&nbsp
 					</div>
 					<div style="float:left; width:40%;padding-top:30px">
-						<input class="form-control" readonly>
-						<ul id="content_1">
-							<li>Google Play Store</li>
-							<li>Baidu Application</li>
-							<li>HiMarket</li>
-							<li>App China</li>
-						</ul>
+						<input id="content_input" class="form-control" readonly onclick="showMenu()">
+						<menu id="content_1">
+							<li id="content_li1" onclick="hideMenu('Google Play Store')">Google Play Store</li>
+							<li id="content_li2" onclick="hideMenu('Baidu Application')">Baidu Application</li>
+							<li id="content_li3" onclick="hideMenu('HiMarket')">HiMarket</li>
+							<li id="content_li4" onclick="hideMenu('App China')">App China</li>
+						</menu>
 					</div>
+					
 					<div style="float:left; width:30%;">
 						<div style="float:left; margin-left: 20px; padding-top:30px">
 							top
