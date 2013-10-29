@@ -6,14 +6,8 @@
 html body {
 	font-size: 100%;
 	width: 100%;
-	background-color: #123456;
-	background:-webkit-gradient(linear, 0% 0%, 0% 100%, 
-								color-stop(0,rgb(0,68,114)), 
-								color-stop(0.2,rgb(20,116,176)),
-								color-stop(0.4,rgb(55,158,224)),
-								color-stop(0.8,rgb(24,88,131)),
-								color-stop(1,rgb(11,55,90))
-								);
+	background-color: rgb(20,116,176);
+	
 }
 
 
@@ -44,8 +38,6 @@ html body {
 #footer {
 	position: absolute;
 	bottom: 0;
-
-	-
 	padding-top: 20px;
 	margin: 50px auto 0 auto;
 	width: 1200px;
@@ -55,21 +47,24 @@ html body {
 #global_search {
 	border: 1px solid #cccccc;
 	border-radius: 9px;
-	height: 25px;
+	height: 11px;
+	padding: 6px 12px;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 	outline: none;
+	display: table-cell;
 }
 
 .global-search-btn {
 	height: 25px;
-	margin-left: -8px;
 	padding: 6px 12px;
 	border: 1px solid #cccccc;
 	border-radius: 9px;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
 	background-image: url(../img/icon-search-2.png);
+	vertical-align: middle;
+	white-space: nowrap;
 }
 
 #head a {

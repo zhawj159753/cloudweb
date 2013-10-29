@@ -40,6 +40,12 @@
 	padding-top: 30px;
 }
 
+#content #detail_show input{
+	background: url(../img/downarrow.png);
+	background-repeat: no-repeat;
+	font-size: 0px;
+}
+
 /*li {
 	list-style-type: none;
 	float: left;

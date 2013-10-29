@@ -1,5 +1,5 @@
 
-
+<!DOCTYPE html>
 <html>
 <head>
 	<title>首页</title>
@@ -14,15 +14,11 @@
 
 	<div id="wrapper">
 		<div id="head">
-			<form>
-				<table cellpadding="0" cellspacing="0" border="0">
-					<tr>
-						<td><input type="text" id="global_search"></td>
-    					<td><button class="global-search-btn"></button></td>
-    					<td>&nbsp &nbsp <a href="login.html" target="_blank">Log in</a></td>
-    					<td>&nbsp &nbsp <a href="">Register</a></td>
-					</tr>
-				</table>
+			<form style="display:table">
+				<input type="text" id="global_search">
+				<span style="display: table-cell; vertical-align:middle">
+					<button class="global-search-btn"></button>
+				</span>
 			</form>
 			
 		</div>
@@ -69,7 +65,11 @@
 		<div id="content">
 			<div id="detail_show">
 				<center>
-					<img src="img/production_1.png">
+					<img id="pic" src="img/production_1.png">
+					<br>
+					<input type="button" value="1" name="imgChange" onmouseover="onMouseOver(this)">
+					<input type="button" value="2" name="imgChange" onmouseover="onMouseOver(this)">
+					<input type="button" value="3" name="imgChange" onmouseover="onMouseOver(this)">
 				</center>
 			</div>
 
@@ -84,7 +84,7 @@
 										<li class>
 											<img src="img/apps.png"  style="padding-right:40px; padding-top:27px">
 											<div class="app-info-pannel">
-												<h4 style="margin-left:20px">info</h4>
+												<h4 style="margin-left:20px;">info</h4>
 											</div>
 										</li>
 										<li class>
@@ -147,7 +147,7 @@
 								</div>
 							</td>
 							<td>
-								<div class="link-border background-test">
+								<div class="link-border background-test" style="position:relative">
 									<h3 style="text-align:left">TEST</h3>
 									<div style="color:white; font-size:14px; font-family:Arial;">
 										<img src="img/icon_06.png" style="float:left">
@@ -155,17 +155,15 @@
 											<h4>Rapid Compatibility Test</h4>
 											<h5 style="padding-left:20px;">Install/Uninstall Test</h5>
 											<h5 style="padding-left:20px;">UI Matching Test</h5>
-											<h5 style="padding-left:20px;">Running Stability Test</h5>
 										</div>
 										<img src="img/icon_06.png" style="float:left">
 										<div style="padding-top:5px; float:left">
-											<h4>Performance Test</h4>
-											<h5 style="padding-left:20px;">Launching Performance</h5>
-											<h5 style="padding-left:20px;">RAM CPU Performance</h5>
-											<h5 style="padding-left:20px;">Consumption Performance</h5>
+											<h4>Rapid Compatibility Test</h4>
+											<h5 style="padding-left:20px;">Launch Performance</h5>
+											<h5 style="padding-left:20px;">RAM CPU</h5>
 										</div>
 									</div>
-									<a href="" style="margin-top:3px; float:right">START TESTING</a>
+									<a href="" style="position:absolute; bottom:10px; left: 110px;">START TESTING</a>
 								</div>
 							</td>
 							<td>
@@ -178,7 +176,7 @@
 												<img src="img/devices.png" style="float:left; zoom:0.6;">
 												<div style="float:left">
 													<h4 style="text-align:left">Type</h4>
-													<h5>Basic Info</h5>
+													<h5>Basic</h5>
 												</div>
 											</div>
 										</li>
@@ -188,7 +186,7 @@
 												<img src="img/devices.png" style="float:left; zoom:0.6">
 												<div style="float:left">
 													<h4 style="text-align:left">Type</h4>
-													<h5>Basic Info</h5>
+													<h5>Basic</h5>
 												</div>
 											</div>
 										</li>
@@ -198,7 +196,7 @@
 												<img src="img/devices.png" style="float:left; zoom:0.6">
 												<div style="float:left">
 													<h4 style="text-align:left">Type</h4>
-													<h5>Basic Info</h5>
+													<h5>Basic</h5>
 												</div>
 											</div>
 										</li>
@@ -208,7 +206,7 @@
 												<img src="img/devices.png" style="float:left; zoom:0.6">
 												<div style="float:left">
 													<h4 style="text-align:left">Type</h4>
-													<h5>Basic Info</h5>
+													<h5>Basic</h5>
 												</div>
 											</div>
 										</li>
@@ -218,7 +216,7 @@
 												<img src="img/devices.png" style="float:left; zoom:0.6">
 												<div style="float:left">
 													<h4 style="text-align:left">Type</h4>
-													<h5>Basic Info</h5>
+													<h5>Basic</h5>
 												</div>
 											</div>
 										</li>
@@ -228,7 +226,7 @@
 												<img src="img/devices.png" style="float:left; zoom:0.6">
 												<div style="float:left">
 													<h4 style="text-align:left">Type</h4>
-													<h5>Basic Info</h5>
+													<h5>Basic</h5>
 												</div>
 											</div>
 										</li>
@@ -238,7 +236,7 @@
 												<img src="img/devices.png" style="float:left; zoom:0.6">
 												<div style="float:left">
 													<h4 style="text-align:left">Type</h4>
-													<h5>Basic Info</h5>
+													<h5>Basic</h5>
 												</div>
 											</div>
 										</li>
@@ -248,7 +246,7 @@
 												<img src="img/devices.png" style="float:left; zoom:0.6">
 												<div style="float:left">
 													<h4 style="text-align:left">Type</h4>
-													<h5>Basic Info</h5>
+													<h5>Basic</h5>
 												</div>
 											</div>
 										</li>
@@ -258,7 +256,7 @@
 												<img src="img/devices.png" style="float:left; zoom:0.6">
 												<div style="float:left">
 													<h4 style="text-align:left">Type</h4>
-													<h5>Basic Info</h5>
+													<h5>Basic</h5>
 												</div>
 											</div>
 										</li>
@@ -268,7 +266,7 @@
 												<img src="img/devices.png" style="float:left; zoom:0.6">
 												<div style="float:left">
 													<h4 style="text-align:left">Type</h4>
-													<h5>Basic Info</h5>
+													<h5>Basic</h5>
 												</div>
 											</div>
 										</li>
@@ -296,5 +294,6 @@
 	</div>
 
 <script src="js/action.js"></script>
+
 </body>
 <html>
