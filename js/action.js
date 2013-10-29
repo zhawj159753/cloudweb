@@ -14,7 +14,7 @@ function zoom() {
 	if(screen.width > 1300){
 		//document.getElementById("content").setAttribute("style","padding-bottom:100px");
 		c.setAttribute("style","zoom:1.2");
-		//
+		
 	}
 	else {
 		c.setAttribute("style","zoom:0.9");
@@ -25,7 +25,7 @@ function zoom() {
 $(".link-border ul li img").hover(function() {
 	var cur_img =$(this).parents("li");
 	cur_img.data("setTime",setTimeout(function(){
-		cur_img.addClass("hover").find(".device-info-pannel").offset({left:cur_img.offset().left, top:cur_img.offset().top+16});
+		cur_img.addClass("hover").find(".device-info-pannel").offset({left:cur_img.offset().left, top:cur_img.offset().top+3.26});
 	}), 100);
 }, function() {
 	var cur_img =$(this).parents("li");
@@ -37,7 +37,7 @@ $(".link-border ul li img").hover(function() {
 $(".link-border ul li img").hover(function() {
 	var cur_img =$(this).parents("li");
 	cur_img.data("setTime",setTimeout(function(){
-		cur_img.addClass("hover").find(".app-info-pannel").offset({left:cur_img.offset().left+4, top:cur_img.offset().top+105});
+		cur_img.addClass("hover").find(".app-info-pannel").offset({left:cur_img.offset().left+2, top:cur_img.offset().top+23});
 	}), 100);
 }, function() {
 	var cur_img =$(this).parents("li");

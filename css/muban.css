@@ -3,11 +3,11 @@
 	padding: 0;
 }
 
-html body {
+html, body {
 	font-size: 100%;
 	width: 100%;
 	background-color: rgb(20,116,176);
-	
+	height: 100%;
 }
 
 
@@ -23,6 +23,8 @@ html body {
 	width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
+	position: relative;
+	min-height: 100%;
 }
 
 #head {
