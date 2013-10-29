@@ -78,7 +78,7 @@ li .align-right {
 	float: right;
 	display: inline;
 	border-bottom: 1px solid;
-	cursor: hand;
+	cursor: default;
 }
 
 #testing {
@@ -124,5 +124,5 @@ li .align-right {
 
 .arrow-down {
 	float: right;
-	cursor: hand;
+	cursor: default;
 }

@@ -7,6 +7,12 @@ html, body {
 	font-size: 100%;
 	width: 100%;
 	background-color: rgb(20,116,176);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%,
+								 color-stop(0, rgb(0,68,114)),
+								 color-stop(0.2, rgb(20,116,176)),
+								 color-stop(0.4, rgb(55,158,224)),
+								 color-stop(0.8, rgb(24,88,131)),
+								 color-stop(1,rgb(0,68,114)));
 	height: 100%;
 }
 
@@ -16,7 +22,7 @@ html, body {
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: -1;
+	z-index: 0;
 }
 
 #wrapper {

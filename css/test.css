@@ -18,7 +18,7 @@
 }
 
 #content .test-block {
-	background: white;
+	background: #006699;
 	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#0099cc), to(#006699));
 }
 

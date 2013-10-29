@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
 	<title>测试</title>
@@ -80,8 +80,6 @@
 						<menu id="content_1">
 							<li id="content_li1" onclick="hideMenu('Google Play Store')">Google Play Store</li>
 							<li id="content_li2" onclick="hideMenu('Baidu Application')">Baidu Application</li>
-							<li id="content_li3" onclick="hideMenu('HiMarket')">HiMarket</li>
-							<li id="content_li4" onclick="hideMenu('App China')">App China</li>
 						</menu>
 					</div>
 					
@@ -100,13 +98,13 @@
 						<table style="width:60%; color:white; font-family:Arial">
 							<tr>
 								<td>
-									<input type="checkbox" value="checkbox" class="check-block">Rapid Compatibility Test
+									<input type="checkbox" value="checkbox" class="check-block" ><span>Rapid Compatibility Test</span>
 								</td>
 								<td>
-									<input type="checkbox" value="checkbox" class="check-block">Performance Test
+									<input type="checkbox" value="checkbox" class="check-block" disabled><span  style="color:#aaa">Performance Test</span>
 								</td>
 								<td>
-									<input type="checkbox" value="checkbox" class="check-block">Further Test
+									<input type="checkbox" value="checkbox" class="check-block" disabled><span style="color:#aaa">Further Test</span>
 								</td>
 							</tr>
 							<tr>
@@ -118,7 +116,7 @@
 									</div>
 								</td>
 								<td>
-									<div class="check-text">
+									<div class="check-text" style="color:#aaa">
 										Launching Performance</p>
 										RAM CPU Performance</p>
 										Consumption Performance</p>
@@ -132,21 +130,23 @@
 				<div class="test-block" style="margin-top:100px">
 					<img src="img/test1.png" style="zoom:0.5; margin-top:-50px">
 					<h4>Select Terminal Devices</h4>
-					<div class="Terminal1">
+					<div class="terminal1">
 						Do Native Test? Please Make Sure <a href="下载插件.html">Plug-in</a> & Device are Available
 					</div>
-					<div class="Terminal2">
+					<div class="terminal2">
 						<div style="width:90%; text-align:left">(suitable devices)</div>
 					</div>
-					<div class="Terminal2">
-						<div style="width:90%; text-align:left">
-							<input type="checkbox">X86
-							<input type="checkbox" style="margin-left:50px">ARM
-						</div>
-					</div>
-					<div class="Terminal2">
+					<div class="terminal2">
 						<div style="width:90%; text-align:left">
 							<table style="color:white; font-size:14px; width:100%">
+								<tr>
+									<td style="width:25%">
+										<input type="checkbox">X86
+									</td>
+									<td style="width:75%" colspan="2">
+										<input type="checkbox">ARM
+									</td>
+								</tr>
 								<tr>
 									<td style="width:25%">
 										<input type="checkbox">ramos 蓝魔
@@ -179,6 +179,17 @@
 								</tr>
 							</table>
 						</div>
+					</div>
+					<div class="terminal2">
+						<input type="checkbox">X86
+						<input type="checkbox">ramos 蓝魔
+						<input type="checkbox">Lenovo K900
+						<input type="checkbox">MOTO MT788
+					</div>
+					<div class="terminal2">
+						<input type="checkbox">ARM
+						<input type="checkbox">Samsung Tab 3
+						<input type="checkbox">Samsung Galaxy S4 i9500
 					</div>
 					<br>
 				</div>
