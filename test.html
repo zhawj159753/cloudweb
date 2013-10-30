@@ -87,6 +87,7 @@
 						<div style="float:left; margin-left: 20px; padding-top:30px">
 							top
 							<input class="form-control" style="width:50px">
+							(at most 1000)
 						</div>
 					</div>
 				</div>
@@ -136,64 +137,36 @@
 					<div class="terminal2">
 						<div style="width:90%; text-align:left">(suitable devices)</div>
 					</div>
-					<div class="terminal2">
-						<div style="width:90%; text-align:left">
-							<table style="color:white; font-size:14px; width:100%">
-								<tr>
-									<td style="width:25%">
-										<input type="checkbox">X86
-									</td>
-									<td style="width:75%" colspan="2">
-										<input type="checkbox">ARM
-									</td>
-								</tr>
-								<tr>
-									<td style="width:25%">
-										<input type="checkbox">ramos 蓝魔
-									</td>
-									<td style="width:30%">
-										<input type="checkbox">Samsung Tab 3
-									</td>
-									<td style="width:45%">
-										<input type="checkbox">Samsung Galaxy S4 i9500
-									</td>
-								</tr>
-								<tr>
-									<td style="width:25%">
-										<input type="checkbox">Lenovo K900
-									</td>
-									<td style="width:30%">
-										<input type="checkbox">Google Nexus4
-									</td>
-									<td style="width:45%">
-										<input type="checkbox">HUAWEI Ascend P6
-									</td>
-								</tr>
-								<tr>
-									<td style="width:25%">
-										<input type="checkbox">MOTO mt788
-									</td>
-									<td style="width:30%">
-										<input type="checkbox">XIAOMI
-									</td>
-								</tr>
-							</table>
+					<table style="width:95%" cellpadding="60">
+						<tr>
+						<td width="35%">
+						<div class="terminal2" style="text-align:left; margin-left:160px">
+							<input type="checkbox" style="margin-bottom:10px;" onclick="selectAllX86()" id="x86">X86
+							<p>
+							<input type="checkbox" style="margin-left:20px;" id="ramos" disabled><span style="color:#aaa">ramos 蓝魔</span><p>
+							<input type="checkbox" style="margin-left:20px;" id="lenovo" onclick="selectSingleX86()">Lenovo K900<p>
+							<input type="checkbox" style="margin-left:20px;" id="moto" onclick="selectSingleX86()">MOTO MT788<p>
 						</div>
-					</div>
-					<div class="terminal2">
-						<input type="checkbox">X86
-						<input type="checkbox">ramos 蓝魔
-						<input type="checkbox">Lenovo K900
-						<input type="checkbox">MOTO MT788
-					</div>
-					<div class="terminal2">
-						<input type="checkbox">ARM
-						<input type="checkbox">Samsung Tab 3
-						<input type="checkbox">Samsung Galaxy S4 i9500
-					</div>
+					    </td>
+					    <td width="60%">
+						<div class="terminal2" style="text-align:left; margin-left: 60px;">
+							<input type="checkbox" style="margin-bottom:10px;" onclick="selectAllARM()" id="arm">ARM<p>
+							<input type="checkbox" style="margin-left:20px;" id="tab3" onclick="selectSingleARM()">Samsung Tab 3
+							<input type="checkbox" style="margin-left:20px;" disabled><span style="color:#aaa">Samsung Galaxy S4 i9500</span><p>
+							<input type="checkbox" style="margin-left:20px;" id="google" onclick="selectSingleARM()">Google Nexus4
+							<input type="checkbox" style="margin-left:24.3px;" disabled><span style="color:#aaa">HUAWEI Ascend P6<p>
+							<input type="checkbox" disabled style="margin-left:20px;"><span style="color:#aaa">XIAOMI</span>
+						</div>
+						</td></tr>
+					</table>
 					<br>
 				</div>
-				<button class="form-button">Submit</button>
+
+				<br>
+				<div style="display:block">
+					<button class="form-button">Submit</button>
+				</div>
+				
 			</form>
 			</center>
 			
@@ -212,5 +185,56 @@
 	</div>
 
 <script src="js/action.js"></script>
+<script type="text/javascript">
+function selectAllX86(){
+	var l = document.getElementById("lenovo");
+	var m = document.getElementById("moto");
+	if(l.checked == false || m.checked == false){
+		
+		l.checked = true;
+		m.checked = true;
+	}
+	else{
+		
+		l.checked = false;
+		m.checked = false;
+	}
+}
+function selectAllARM(){
+	var s = document.getElementById("tab3");
+	var g = document.getElementById("google");
+	if(s.checked == false || g.checked == false){
+		s.checked = true;
+		g.checked = true;
+	}
+	else{
+		s.checked = false;
+		g.checked = false;
+	}
+}
+function selectSingleX86(){
+	var x = document.getElementById("x86");
+	var l = document.getElementById("lenovo");
+	var m = document.getElementById("moto");
+	if(x.checked == true){
+		x.checked = false;
+	}
+	else if(l.checked == true && m.checked == true ){
+		x.checked = true;
+	}
+}
+
+function selectSingleARM(){
+	var a = document.getElementById("arm");
+	var t = document.getElementById("tab3");
+	var g = document.getElementById("google");
+	if(a.checked == true){
+		a.checked = false;
+	}
+	else if(t.checked == true && g.checked == true){
+		a.checked = true;
+	}
+}
+</script>
 </body>
 <html>

@@ -195,20 +195,37 @@
 <script src="js/action.js"></script>
 <script type="text/javascript">
 
-var already = 0;
-function display(max){
-	already++;
-	var disObj = document.all.load_percentage;
-	disObj.style.width = 100 * already/max + "%";
-	disObj.innerHTML = 100 * already/max + "%";
 
-	var timer = window.setTimeout("display("+max+")", 50);
-	if(already >= max){
-		window.clearTimeout(timer);
-		disObj.innerHTML = "已完成。";
+function triggle(){
+	var disObj = document.all.load_percentage;
+	max = 100;
+	already = 0;
+	var i = 0;
+	for(i = 0; i < 40; i++){
+		already += parseInt(Math.random()*(4-1+1) + 1); 
+		if(already >= max){
+			disObj.style.width = "100%";
+			disObj.innerHTML = "已完成。";
+			break;
+		}
+		
+		disObj.style.width = 100 * already/max + "%";
+		disObj.innerHTML = 100 * already/max + "%";
+
 	}
 }
-
+triggle();
+/*function triggle(already, max){
+	var disObj = document.all.load_percentage;
+	if(already>=max){
+		disObj.style.width = "100%";
+		disObj.innerHTML = "已完成。";
+	}
+	else{
+		disObj.style.width = 100 * already/max + "%";
+		disObj.innerHTML = 100 * already/max + "%";
+	}
+}*/
 function hide(funName){
 	var fun = document.getElementById(funName);
 	if(fun.style.display == "block"){
